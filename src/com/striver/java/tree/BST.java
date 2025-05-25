@@ -6,7 +6,7 @@ public class BST {
     }
 
     private static class Node {
-        private int value;
+        private final int value;
         private int height;
         private Node left;
         private Node right;
@@ -26,7 +26,7 @@ public class BST {
         return height(root);
     }
 
-    public int height(Node node) {
+    private int height(Node node) {
         if (node == null) {
             return -1;
         }
